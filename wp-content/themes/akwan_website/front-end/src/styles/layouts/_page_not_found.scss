@@ -1,0 +1,51 @@
+@use "../common/variables" as *;
+@use "../mixins/mixins" as *;
+
+
+.page-not-found {
+  @include paddingY(size(120));
+
+  @include min-medium-screen {
+    @include paddingY(size(250), size(120));
+  }
+
+  .content {
+    @include flex(center, center, column, false);
+  }
+
+  .error-tittle {
+    font-size: size(104 , 120);
+    font-family: $carot-sans;
+    font-style: normal;
+    font-weight: 260;
+    line-height: size(160);
+    color: $akwan_website_white;
+    }
+
+  .text{
+    color: $akwan_website_white;
+    width: 44.1%;
+    text-align: center;
+    margin-bottom: size(40);
+    @include small-screen{
+      width: 66.1%;
+    }
+  }
+
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $akwan_website_black;
+  }
+
+  .paragraph {
+    max-width: size(970);
+    text-align: center;
+    color: $akwan_website_black;
+    @include marginY(size(40));
+  }
+
+  .theme-cta-button {
+    //background: $akwan_website_light_green;
+    //color: $akwan_website_white;
+  }
+}

@@ -1,0 +1,32 @@
+// content width
+$content-max-width: 558;
+
+// media screen sizes
+$small-screen-max-width: 599.98px;
+$medium-screen-max-width: 991.98px;
+$medium-screen-min-width: 600px;
+$large-screen-min-width: 992px;
+
+// color
+$akwan_website_black: var(--wp--preset--color--black);
+$akwan_website_white: var(--wp--preset--color--white);
+$akwan_website_green: var(--wp--preset--color--green);
+$akwan_website_light_green: var(--wp--preset--color--light-green);
+$akwan_website_dark_green: var(--wp--preset--color--dark-green);
+$akwan_website_ecru_white: var(--wp--preset--color--ecru-white);
+
+// fonts
+$carot-sans: var(--wp--preset--font-family--carot-sans);
+//default duration
+$duration: 500ms;
+//override bootstrap variables
+$container-padding-sm: 16;
+$container-padding-md: 40;
+$container-padding-lg: 120;
+
+
+// design screen sizes
+$design-width: 1440;
+$tablet-width: 992;
+$mobile-width: 600;
+$sMobile-width: 375;

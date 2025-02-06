@@ -1,0 +1,57 @@
+@use "src/styles/common/variables" as *;
+@use "../mixins/mixins" as *;
+
+.related-card {
+  display: flex;
+  flex-direction: column;
+
+  &:hover img {
+    transform: scale(1.02);
+  }
+
+  .image {
+    padding-top: 73%;
+    width: 100%;
+    margin-bottom: size(16);
+
+    @include min-medium-screen {
+      width: 100%;
+      padding-top: 72.92%;
+      margin-bottom: size(24);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: size(20);
+      transition: 500ms all;
+    }
+  }
+
+  .thought-leadership-date {
+    margin-bottom: size(16);
+    color: #4C8D2E;
+    font-size: size(16);
+    font-weight: 260;
+    line-height: 150%;
+    @include min-medium-screen {
+      font-weight: 400;
+    }
+  }
+
+  .thought-leadership-description {
+    font-size: size(24);
+    line-height: 135%;
+
+    @include small-screen {
+      &:last-of-type {
+        margin-bottom: size(14);
+      }
+    }
+  }
+}
+
+
+
+

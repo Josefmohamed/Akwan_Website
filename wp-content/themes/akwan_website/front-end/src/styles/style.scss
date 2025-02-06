@@ -1,0 +1,18 @@
+@use "common/variables" as *;
+@use "mixins/mixins" as *;
+@use "common/main-general-classes" as *;
+@use "common/site-general-classes" as *;
+@use "common/wp-classes" as *;
+@use "common/entry-content" as *;
+@use "partials/related-posts" as *;
+@use "partials/post-card" as *;
+@use "layouts/blog" as *;
+@use "layouts/full-width" as *;
+@use "layouts/general" as *;
+@use "layouts/entry-content" as *;
+@use "layouts/page_not_found" as *;
+@use "partials" as *;
+
+/*!
+ end general ##############################
+ */

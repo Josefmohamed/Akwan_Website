@@ -1,0 +1,15 @@
+@use "../../styles/common/variables" as *;
+@use "../../styles/mixins/mixins" as *;
+
+.hero_block {
+  background: red;
+
+
+  img {
+    //@include square()
+    @include marginY(size_clamp(30, 40));
+    width: size_clamp(30, 40);
+    height: size_clamp(30, 40);
+  }
+}
+

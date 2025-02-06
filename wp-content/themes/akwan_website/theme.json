@@ -1,0 +1,230 @@
+{
+  "$schema": "https:\/\/schemas.wp.org\/trunk\/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "black",
+          "color": "#001407",
+          "name": "Black"
+        },
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "White"
+        },
+        {
+          "slug": "green",
+          "color": "#172F29",
+          "name": "Green"
+        },
+        {
+          "slug": "dark-green",
+          "color": "#1E1E1E",
+          "name": "Dark Green"
+        },
+        {
+          "slug": "light-green",
+          "color": "#4C8D2E",
+          "name": "Light Green"
+        },
+        {
+          "slug": "ecru-white",
+          "color": "#EDF4EA",
+          "name": "Ecru White"
+        }
+      ]
+    },
+    "typography": {
+      "lineHeight": true,
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+          "slug": "system-fonts",
+          "name": "System Fonts"
+        },
+        {
+          "fontFamily": "Geneva, Tahoma, Verdana, sans-serif",
+          "slug": "geneva-verdana"
+        },
+        {
+          "fontFamily": "Cambria, Georgia, serif",
+          "slug": "cambria-georgia"
+        },
+        {
+          "fontFamily": "Carot Sans",
+          "name": "Carot Sans",
+          "slug": "carot-sans",
+          "fontFace": [
+            {
+              "fontFamily": "Carot Sans",
+              "fontWeight": "260",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [
+                "file:./theme-fonts/Carot Sans/CarotSans-Light.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Carot Sans",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [
+                "file:./theme-fonts/Carot Sans/CarotSans-Regular.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Carot Sans",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [
+                "file:./theme-fonts/Carot Sans/CarotSans-Bold.woff2"
+              ]
+            }
+          ]
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "headline-6",
+          "size": "1rem",
+          "name": "Headline 6"
+        },
+        {
+          "slug": "headline-5",
+          "size": "1.125rem",
+          "name": "Headline 5"
+        },
+        {
+          "slug": "headline-4",
+          "size": "clamp(2rem, 1.7142857143rem + 0.4761904762vw, 2.4rem)",
+          "name": "Headline 4"
+        },
+        {
+          "slug": "headline-3",
+          "size": "clamp(2.4rem, 1.8285714286rem + 0.9523809524vw, 3.2rem)",
+          "name": "Headline 3"
+        },
+        {
+          "slug": "headline-2",
+          "size": "clamp(3.2rem, 2.0571428571rem + 1.9047619048vw, 4.8rem)",
+          "name": "Headline 2"
+        },
+        {
+          "slug": "headline-1",
+          "size": "clamp(4.8rem, 3.0857142857rem + 2.8571428571vw, 7.2rem)",
+          "name": "Headline 1"
+        },
+        {
+          "slug": "paragraph",
+          "size": "clamp(1.6rem, 1.6rem + 0vw, 1.6rem)",
+          "name": "Paragraph"
+        }
+      ]
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "units": [
+        "px",
+        "em",
+        "rem",
+        "vh",
+        "vw",
+        "%"
+      ],
+      "spacingScale": {
+        "operator": "*",
+        "increment": 1.5,
+        "steps": 7,
+        "mediumStep": 1.5,
+        "unit": "rem"
+      }
+    },
+    "layout": {
+      "contentSize": "min(90%,1000px)",
+      "wideSize": "min(90%,1200px)"
+    },
+    "custom": {
+      "spacing": "14px"
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    }
+  },
+  "styles": {
+    "blocks": {
+      "core\/heading": {
+        "color": {
+          "text": "var(--wp--preset--color--black)"
+        },
+        "elements": {
+          "h1": {
+            "typography": {
+              "fontSize": "var(--wp--preset--font-size--headline-1)",
+              "fontWeight": "260",
+              "lineHeight": "clamp(5.6rem, 3.8857142857rem + 2.8571428571vw, 8rem)"
+            }
+          },
+          "h2": {
+            "typography": {
+              "fontSize": "var(--wp--preset--font-size--headline-2)",
+              "fontWeight": "260",
+              "lineHeight": "clamp(4rem, 2.8571428571rem + 1.9047619048vw, 5.6rem)"
+            }
+          },
+          "h3": {
+            "typography": {
+              "fontSize": "var(--wp--preset--font-size--headline-3)",
+              "fontWeight": "260",
+              "lineHeight": "clamp(3.2rem, 2.6285714286rem + 0.9523809524vw, 4rem)"
+            }
+          },
+          "h4": {
+            "typography": {
+              "fontSize": "var(--wp--preset--font-size--headline-4)",
+              "fontWeight": "260",
+              "lineHeight": "clamp(2.8rem, 2.5142857143rem + 0.4761904762vw, 3.2rem)"
+            }
+          },
+          "h5": {
+            "typography": {
+              "fontSize": "var(--wp--preset--font-size--headline-5)",
+              "fontWeight": "260",
+              "lineHeight": "1.7"
+            }
+          },
+          "h6": {
+            "typography": {
+              "fontSize": "var(--wp--preset--font-size--headline-6)",
+              "fontWeight": "260",
+              "lineHeight": "1.7"
+            }
+          }
+        }
+      },
+      "core\/paragraph": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--paragraph)",
+          "fontWeight": "260",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    "typography": {
+      "fontSize": "var(--wp--preset--font-size--paragraph)",
+      "fontFamily": "var(--wp--preset--font-family--carot-sans)",
+      "lineHeight": "clamp(2.4rem, 2.4rem + 0vw, 2.4rem)"
+    }
+  }
+}
