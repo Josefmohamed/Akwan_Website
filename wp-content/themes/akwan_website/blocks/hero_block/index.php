@@ -1,15 +1,15 @@
 <?php
+// @author DELL
+// Create id attribute allowing for custom "anchor" value.
 $id = '';
 $className = $dataClass = 'hero_block';
 if (isset($block)) {
-// Create id attribute allowing for custom "anchor" value.
-  $id = $block['id'];
+  $id = 'block_' . uniqid();
   if (!empty($block['anchor'])) {
     $id = $block['anchor'];
   }
 
 // Create class attribute allowing for custom "className" and "align" values.
-
   if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
   }
@@ -23,33 +23,39 @@ if (isset($block)) {
     return;
   endif;
 }
-
 /****************************
  *     Custom ACF Meta      *
- *
- *
- *
  ****************************/
-$title = get_the_title();
-$excerpt = get_the_excerpt();
+$title = get_field('title');
+$description = get_field('description');
+$cta_button = get_field('cta_button');
+$image = get_field('image');
 ?>
 <!-- region akwan_website's Block -->
 <?php general_settings_for_blocks($id, $className, $dataClass); ?>
-<?php if ($title): ?>
-  <h1><?= $title ?></h1>
-<?php endif; ?>
-<?php if ($excerpt): ?>
-  <div><?= $excerpt ?></div>
-<?php endif ?>
-<?php if (has_post_thumbnail()) {
-  echo \Theme\Helpers::get_post_thumbnail(get_the_ID(), 'large');
-} ?>
+<div class="container">
+  <div class="cards-wrapper">
+    <div class="left-content">
+      <?php if ($title) { ?>
+      <h2><?= $title ?></h2>
+      <?php } ?>
+      <?php if ($description) { ?>
+      <div class="description"><?= $description ?></div>
+      <?php } ?>
+      <?php if (!empty($cta_button) && is_array($cta_button)) { ?>
+        <a class="cta-button light-cta" href="<?= $cta_button['url'] ?>" target="<?= $cta_button['target'] ?>"><?= $cta_button['title'] ?></a>
+      <?php } ?>
 
-
-
-
-
-
+    </div>
+    <div class="right-image">
+      <?php if (!empty($image) && is_array($image)) { ?>
+        <picture class="image image-wrapper cover-image aspect-ratio">
+          <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
+        </picture>
+      <?php } ?>
+    </div>
+  </div>
+</div>
 </section>
 
 

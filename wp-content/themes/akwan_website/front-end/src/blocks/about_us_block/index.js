@@ -6,7 +6,7 @@ import {animations} from "../../scripts/general/animations";
  * @param block {HTMLElement}
  * @returns {Promise<void>}
  */
-const heroBlock = async (block) => {
+const aboutUsBlock = async (block) => {
 
   // add block code here
 // testing the new hidden value 
@@ -15,5 +15,5 @@ const heroBlock = async (block) => {
     imageLazyLoading(block);
 };
 
-export default heroBlock;
+export default aboutUsBlock;
 

@@ -134,9 +134,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_63d670951bf67",
-            "label": "Main Logo",
-            "name": "main_logo",
+            "key": "field_67a554cf658d5",
+            "label": "Footer Logo",
+            "name": "footer_logo",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -149,7 +149,7 @@
             },
             "uploader": "",
             "acfe_thumbnail": 0,
-            "return_format": "id",
+            "return_format": "array",
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -159,49 +159,6 @@
             "mime_types": "",
             "preview_size": "medium",
             "library": "all"
-        },
-        {
-            "key": "field_63d670cf1bf68",
-            "label": "Second Logo",
-            "name": "second_logo",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "uploader": "",
-            "acfe_thumbnail": 0,
-            "return_format": "id",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium",
-            "library": "all"
-        },
-        {
-            "key": "field_63d670de1bf69",
-            "label": "Logo Link",
-            "name": "logo_link",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "30",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
         },
         {
             "key": "field_63d670f71bf6a",
@@ -489,6 +446,77 @@
             "append": ""
         },
         {
+            "key": "field_67a544abcb7cc",
+            "label": "Social Links",
+            "name": "social_links",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_repeater_stylised_button": 0,
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_67a544d6cb7ce",
+                    "label": "Icon",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "uploader": "",
+                    "acfe_thumbnail": 0,
+                    "return_format": "array",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "parent_repeater": "field_67a544abcb7cc"
+                },
+                {
+                    "key": "field_67a544c4cb7cd",
+                    "label": "Url",
+                    "name": "url",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_67a544abcb7cc"
+                }
+            ]
+        },
+        {
             "key": "field_63d67466bf275",
             "label": "Privacy Policy",
             "name": "privacy_policy",
@@ -503,217 +531,6 @@
                 "id": ""
             },
             "return_format": "array"
-        },
-        {
-            "key": "field_63d6bc6deeef2",
-            "label": "LinkedIn Link",
-            "name": "linkedin_link",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_63d6747fbf276",
-            "label": "Cookies Link",
-            "name": "cookies_link",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
-            "key": "field_63d6bc9deeef3",
-            "label": "Vimeo Link",
-            "name": "vimeo_link",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_63d6bc6deeef2",
-            "label": "LinkedIn Link",
-            "name": "linkedin_link",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_63d6bc9deeef3",
-            "label": "Vimeo Link",
-            "name": "vimeo_link",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_63e0abec1b728",
-            "label": "Archive pages",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_63e0ac1b1b729",
-            "label": "Blog Archive Page",
-            "name": "post_archive_page",
-            "aria-label": "",
-            "type": "page_link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "page"
-            ],
-            "taxonomy": "",
-            "allow_archives": 0,
-            "multiple": 0,
-            "allow_null": 0
-        },
-        {
-            "key": "field_63e0ad0d1b72a",
-            "label": "Books Archive Page",
-            "name": "books_archive_page",
-            "aria-label": "",
-            "type": "page_link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "page"
-            ],
-            "taxonomy": "",
-            "allow_archives": 0,
-            "multiple": 0,
-            "allow_null": 0
-        },
-        {
-            "key": "field_63e0ad481b72c",
-            "label": "Articles Archive Page",
-            "name": "articles_archive_page",
-            "aria-label": "",
-            "type": "page_link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "page"
-            ],
-            "taxonomy": "",
-            "allow_archives": 0,
-            "multiple": 0,
-            "allow_null": 0
-        },
-        {
-            "key": "field_63e0ad3b1b72b",
-            "label": "Interviews Archive Page",
-            "name": "interviews_archive_page",
-            "aria-label": "",
-            "type": "page_link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "page"
-            ],
-            "taxonomy": "",
-            "allow_archives": 0,
-            "multiple": 0,
-            "allow_null": 0
-        },
-        {
-            "key": "field_63e171b80845e",
-            "label": "Team Page",
-            "name": "team_page",
-            "aria-label": "",
-            "type": "page_link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "page"
-            ],
-            "taxonomy": "",
-            "allow_archives": 1,
-            "multiple": 0,
-            "allow_null": 0
         },
         {
             "key": "field_61e3fb60d7e96",
@@ -979,7 +796,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
     "acfe_display_title": "",
@@ -989,5 +806,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1685455292
+    "modified": 1738888455
 }
