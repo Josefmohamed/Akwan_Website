@@ -5,96 +5,49 @@ footer {
   background-color: #001407;
   @include paddingY(size(80), size(32));
 
-  .footer-logo {
-    width: 47px;
-    height: 47px;
-    max-height: 47px;
-    display: block;
-
-    svg, img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-
-  .footer-link {
-    @include font(16px, 260, 24px, $akwan_website_white, $carot-sans);
-  }
-
-  .footer-links {
-    margin-top: size(24, 33);
+  .footer-wrapper {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-
+    gap: 30px;
     @include min-medium-screen {
-      justify-content: space-between;
+      gap: 0;
       flex-direction: row;
-      border-bottom: 2px solid #172F29;
-      padding-bottom: size(35);
     }
-
-    .footer-title {
-      color: $akwan_website_light_green;
-      margin-bottom: size(15);
-    }
-
-
-    li {
-      list-style-type: none;
-
-      &:not(:last-child) {
-        margin-bottom: size(16);
+    .left-content {
+      width: 100%;
+      gap: 15px;
+      @include min-medium-screen {
+        width: 35%;
       }
-
-      a {
-        &:hover {
-          color: $akwan_website_light_green;
+      .footer-logo {
+        width: 107px;
+        height: 47px;
+        max-height: 47px;
+        display: block;
+        svg, img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
     }
-  }
 
-  .first-column, .second-column {
-    //width: 10.5%;
-    @include small-screen {
-      border-bottom: 2px solid $akwan_website_green;
-      padding-bottom: size(24);
-    }
-  }
-
-  .second-column, .third-column {
-    @include small-screen {
-      padding-top: size(24);
-    }
-  }
-
-  .third-column {
-    display: flex;
-    flex-direction: column;
-
-    .phone-number {
-      color: $akwan_website_white;
-
-      &:hover {
-        color: $akwan_website_light_green;
+    .right-content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      @include min-medium-screen {
+        width: 55%;
+      }
+      .links-wrapper {
+        width: 100%;
+        @include min-medium-screen {
+          width: 40%;
+        }
       }
     }
-  }
 
-  .address {
-    color: $akwan_website_white;
-
-    &:hover {
-      color: $akwan_website_light_green;
-    }
-  }
-
-  .email {
-    color: $akwan_website_light_green;
-    border-bottom: 1px solid $akwan_website_light_green;
-    width: fit-content;
   }
 
   .copy-right-social-links {
@@ -103,11 +56,10 @@ footer {
     justify-content: space-between;
     flex-direction: column;
     gap: 25px;
+    align-items: center;
     @include min-medium-screen {
       flex-direction: row;
-      align-items: center;
     }
-
     p {
       color: $akwan_website_white;
       opacity: 0.3;
@@ -134,76 +86,19 @@ footer {
       align-items: center;
       gap: 15px;
 
-      .social-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        @include square(15px);
+      .icon-wrapper {
+        @include square(25px);
         img {
           @include square(100%);
           object-fit: contain;
         }
+
       }
     }
 
 
   }
 
-  @include small-screen {
-    .accordion-head {
-      svg {
-        transition: transform $duration;
-      }
-    }
-    .accordion-active {
-      .accordion-body {
-        height: auto;
-      }
-
-      svg {
-        transform: scale(-1);
-      }
 
 
-    }
-
-    .accordion-body {
-      overflow: hidden;
-      height: 0;
-
-
-    }
-    .first-column, .second-column {
-      .footer-title {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  .first-column, .second-column {
-    &.accordion-active {
-      .footer-title {
-        margin-bottom: size(16);
-      }
-    }
-  }
-
-  .footer-title-wrapper {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    align-items: center;
-
-    svg {
-      display: block;
-    }
-
-    @include min-medium-screen {
-      svg {
-        display: none;
-      }
-    }
-
-
-  }
 }

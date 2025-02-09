@@ -472,3 +472,16 @@ ol.theme-unordered-list-element {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.gab-20 {
+  gap: $gab-20;
+}
+
+.gab-40 {
+  gap: $gab-40;
+}

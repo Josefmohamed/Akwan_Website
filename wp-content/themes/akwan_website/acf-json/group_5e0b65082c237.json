@@ -149,7 +149,7 @@
             },
             "uploader": "",
             "acfe_thumbnail": 0,
-            "return_format": "array",
+            "return_format": "id",
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -161,9 +161,29 @@
             "library": "all"
         },
         {
-            "key": "field_63d670f71bf6a",
-            "label": "Menu Column",
-            "name": "menu_column",
+            "key": "field_67a7dd25c62d8",
+            "label": "Footer Info",
+            "name": "footer_info",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67a7d6c1c38a5",
+            "label": "First Column",
+            "name": "first_column",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -177,34 +197,11 @@
             "layout": "block",
             "acfe_seamless_style": 0,
             "acfe_group_modal": 0,
-            "acfe_group_modal_close": 0,
-            "acfe_group_modal_button": "",
-            "acfe_group_modal_size": "large",
             "sub_fields": [
                 {
-                    "key": "field_63d671941bf6b",
-                    "label": "Menu Title",
-                    "name": "menu_title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_63d671de1bf6c",
-                    "label": "Menu Links",
-                    "name": "menu_links",
+                    "key": "field_67a7d6cec38a6",
+                    "label": "Footer Link",
+                    "name": "footer_link",
                     "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
@@ -225,9 +222,9 @@
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
-                            "key": "field_63d671fa1bf6d",
-                            "label": "Menu Link",
-                            "name": "menu_link",
+                            "key": "field_67a7d6dac38a7",
+                            "label": "link",
+                            "name": "link",
                             "aria-label": "",
                             "type": "link",
                             "instructions": "",
@@ -239,16 +236,19 @@
                                 "id": ""
                             },
                             "return_format": "array",
-                            "parent_repeater": "field_63d671de1bf6c"
+                            "parent_repeater": "field_67a7d6cec38a6"
                         }
                     ]
                 }
-            ]
+            ],
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
         },
         {
-            "key": "field_63d6720b1bf6e",
-            "label": "Insights Column",
-            "name": "insights_column",
+            "key": "field_67a7d6ed57403",
+            "label": "Second Column",
+            "name": "second_column",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -262,34 +262,11 @@
             "layout": "block",
             "acfe_seamless_style": 0,
             "acfe_group_modal": 0,
-            "acfe_group_modal_close": 0,
-            "acfe_group_modal_button": "",
-            "acfe_group_modal_size": "large",
             "sub_fields": [
                 {
-                    "key": "field_63d672211bf6f",
-                    "label": "Insights Title",
-                    "name": "insights_title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_63d6722c1bf70",
-                    "label": "Insights Links",
-                    "name": "insights_links",
+                    "key": "field_67a7d6ed57404",
+                    "label": "Footer Link",
+                    "name": "footer_link",
                     "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
@@ -310,9 +287,9 @@
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
-                            "key": "field_63d6723b1bf71",
-                            "label": "Insight Link",
-                            "name": "insight_link",
+                            "key": "field_67a7d6ed57405",
+                            "label": "link",
+                            "name": "link",
                             "aria-label": "",
                             "type": "link",
                             "instructions": "",
@@ -324,106 +301,14 @@
                                 "id": ""
                             },
                             "return_format": "array",
-                            "parent_repeater": "field_63d6722c1bf70"
+                            "parent_repeater": "field_67a7d6ed57404"
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "key": "field_63d6724f1bf72",
-            "label": "Info Column",
-            "name": "info_column",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "acfe_seamless_style": 0,
-            "acfe_group_modal": 0,
+            ],
             "acfe_group_modal_close": 0,
             "acfe_group_modal_button": "",
-            "acfe_group_modal_size": "large",
-            "sub_fields": [
-                {
-                    "key": "field_63d672b01bf73",
-                    "label": "Info Title",
-                    "name": "info_title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_63d672cb1bf74",
-                    "label": "Address",
-                    "name": "address",
-                    "aria-label": "",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 0,
-                    "delay": 0
-                },
-                {
-                    "key": "field_63d9000022151",
-                    "label": "Phone Number",
-                    "name": "phone_number",
-                    "aria-label": "",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array"
-                },
-                {
-                    "key": "field_63d672de1bf75",
-                    "label": "Email",
-                    "name": "email",
-                    "aria-label": "",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array"
-                }
-            ]
+            "acfe_group_modal_size": "large"
         },
         {
             "key": "field_63d6742659a80",
@@ -515,22 +400,6 @@
                     "parent_repeater": "field_67a544abcb7cc"
                 }
             ]
-        },
-        {
-            "key": "field_63d67466bf275",
-            "label": "Privacy Policy",
-            "name": "privacy_policy",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
         },
         {
             "key": "field_61e3fb60d7e96",
@@ -806,5 +675,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1738888455
+    "modified": 1739054702
 }

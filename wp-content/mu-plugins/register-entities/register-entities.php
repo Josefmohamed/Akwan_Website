@@ -13,6 +13,8 @@ require_once 'entities/Entity.php';
 
 global $entities;
 $entities = [
+//    'Teams',
+//    'Projects',
 //    'SharedTaxonomies',
 //    'Teams',
 //    'Testimonials',
