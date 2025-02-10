@@ -27,9 +27,14 @@
   .content-wrapper {
     background-color: red;
     padding: 50px;
-    width: 40%;
     position: relative;
-    top: 80px;
+    width: 80%;
+    top: 150px;
+
+    @include min-medium-screen {
+      top: 150px;
+      width: 40%;
+    }
     .about-us-title {
       margin-bottom: 15px;
     }

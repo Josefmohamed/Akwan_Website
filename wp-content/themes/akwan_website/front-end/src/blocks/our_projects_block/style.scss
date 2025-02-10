@@ -1,7 +1,37 @@
 @use "../../styles/common/variables" as *;
 @use "../../styles/mixins/mixins" as *;
+@import "swiper/css";
 
 // @author DELL
 .our_projects_block {
-
+  @include paddingY(125px);
+  .title {
+    margin-bottom: 25px;
+  }
+  .project-posts-swiper {
+    .project-card {
+      .image {
+        padding-top: 100%;
+        transition: padding-top $duration;
+      }
+      .hidden-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        padding: 30px;
+        transition: opacity $duration , background-color $duration;
+      }
+      &:hover {
+        .hidden-content {
+          opacity: 1;
+          background-color: red;
+        }
+        .image {
+          padding-top: 125%;
+        }
+      }
+    }
+  }
 }

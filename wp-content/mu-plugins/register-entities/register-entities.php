@@ -13,16 +13,8 @@ require_once 'entities/Entity.php';
 
 global $entities;
 $entities = [
-//    'Teams',
-//    'Projects',
-//    'SharedTaxonomies',
-//    'Teams',
-//    'Testimonials',
-//    'Books',
-//    'CaseStudies',
-//    'Interviews',
-//    'Event',
-//    'Articles',
+    'Teams',
+    'Projects',
 ];
 
 array_map(function ($entityName) {

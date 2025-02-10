@@ -110,7 +110,6 @@ $header_logo_dark = get_field('header_logo_dark', 'options');
       data-body-class="<?= implode(' ', get_body_class()) ?>"
       data-header-class="<?= $bgClass ?>">
   <!-- remove header if page template if full with no header and footer-->
-  <?php if (!is_page_template('templates/full-width-no-header-footer.php') && !is_singular(['teams', 'books']) ): ?>
   <header class="akwan_website-header <?= $bgClass ?>">
     <div class="container">
       <div class="header-wrapper">
@@ -188,4 +187,3 @@ $header_logo_dark = get_field('header_logo_dark', 'options');
       </div>
     </div>
   </header>
-<?php endif; ?>

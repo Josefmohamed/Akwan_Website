@@ -9,7 +9,7 @@ $copy_right_text = get_field('copy_right_text', 'options');
 ?>
 <!--region footer-->
 <!-- remove footer if page template if full with no header and footer-->
-  <footer>
+  <footer class="akwan_website-footer">
     <div class="container">
       <div class="footer-wrapper">
         <div class="left-content flex-col">
