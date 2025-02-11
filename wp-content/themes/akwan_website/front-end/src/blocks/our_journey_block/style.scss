@@ -1,0 +1,16 @@
+@use "../../styles/common/variables" as *;
+@use "../../styles/mixins/mixins" as *;
+
+// @author DELL
+.our_journey_block {
+  @include paddingY(size(250px));
+  .journey-sub-title {
+    margin-bottom: 65px;
+  }
+  .content-wrapper {
+    padding-left: 60px;
+    .journey-btn {
+      @include marginX(auto);
+    }
+  }
+}

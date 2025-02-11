@@ -35,7 +35,7 @@ $image = get_field('image');
 <?php general_settings_for_blocks($id, $className, $dataClass); ?>
 <div class="container">
   <div class="cards-wrapper">
-    <div class="left-content">
+    <div class="left-content flex-col gab-20">
       <?php if ($title) { ?>
       <h2><?= $title ?></h2>
       <?php } ?>
@@ -43,9 +43,8 @@ $image = get_field('image');
       <div class="description"><?= $description ?></div>
       <?php } ?>
       <?php if (!empty($cta_button) && is_array($cta_button)) { ?>
-        <a class="cta-button light-cta" href="<?= $cta_button['url'] ?>" target="<?= $cta_button['target'] ?>"><?= $cta_button['title'] ?></a>
+        <a class="cta-button light-cta tab-btn" href="<?= $cta_button['url'] ?>" target="<?= $cta_button['target'] ?>"><?= $cta_button['title'] ?></a>
       <?php } ?>
-
     </div>
     <div class="right-image">
       <?php if (!empty($image) && is_array($image)) { ?>

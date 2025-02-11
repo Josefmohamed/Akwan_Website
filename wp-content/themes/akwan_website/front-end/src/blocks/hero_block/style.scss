@@ -9,7 +9,9 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    gap: 45px;
     @include min-medium-screen {
+      gap: 0;
       flex-direction: row;
     }
     .left-content {
