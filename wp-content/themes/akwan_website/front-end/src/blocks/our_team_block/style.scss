@@ -4,4 +4,29 @@
 // @author DELL
 .our_team_block {
   @include paddingY(125px);
+  .team {
+    display: grid;
+    gap: 90px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 40px;
+    margin-left: 40px;
+    @include large-screen {
+      gap: 180px;
+      margin-top: 80px;
+      margin-left: 80px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .team-cards {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      .member-image {
+        width: 40%;
+        padding-top: 20%;
+      }
+    }
+    .team-cards:nth-child(even) {
+        background-color: red;
+    }
+  }
 }
