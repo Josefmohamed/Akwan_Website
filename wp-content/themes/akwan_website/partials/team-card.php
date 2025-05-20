@@ -10,7 +10,10 @@ $member_description = get_field('member_description', $post_id);
 ?>
 <div class="team-cards">
   <picture class="aspect-ratio member-image">
-    <?= \Theme\Helpers::get_post_thumbnail($post_id, 'img-384-384') ?>
+<!--    --><?//= \Theme\Helpers::get_post_thumbnail($post_id, 'img-384-384') ?>
+
+    <img src="<?= $member_image['url'] ?>" alt="<?= $member_image['alt'] ?>">
+
   </picture>
   <div class="member-content">
     <?php if ($member_name) { ?>
