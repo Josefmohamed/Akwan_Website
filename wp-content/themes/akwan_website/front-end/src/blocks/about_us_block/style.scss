@@ -5,7 +5,7 @@
 .about_us_block {
 
   position: relative;
-  height: calc(100vh - #{size(163)});
+  height: calc(100vh - #{size(145)});
   z-index: 4;
 
   .cover-image {
@@ -25,15 +25,20 @@
   }
 
   .content-wrapper {
-    background-color: red;
-    padding: 50px;
+    background-color: $akwan_website_warm_ivory;
     position: relative;
+    top: size(50);
+    padding: 40px 40px 55px 30px;
     width: 80%;
-    top: 150px;
-
     @include min-medium-screen {
-      top: 150px;
-      width: 40%;
+      padding: size(60) size(40) size(75) size(70);
+      width: 55.97%;
+    }
+    @include large-screen {
+      top: size(107);
+      padding: 82px 118px 75px 121px;
+      width: 45.97%;
+
     }
     .about-us-title {
       margin-bottom: 15px;

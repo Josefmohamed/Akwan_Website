@@ -14,28 +14,28 @@
         },
         {
           "slug": "white",
-          "color": "#ffffff",
+          "color": "#FFFFFF",
           "name": "White"
         },
         {
-          "slug": "green",
-          "color": "#172F29",
-          "name": "Green"
+          "slug": "midnight-navy",
+          "color": "#023568",
+          "name": "Midnight Navy"
         },
         {
-          "slug": "dark-green",
-          "color": "#1E1E1E",
-          "name": "Dark Green"
+          "slug": "warm-ivory",
+          "color": "#EFEBE2",
+          "name": "Warm Ivory"
         },
         {
-          "slug": "light-green",
-          "color": "#4C8D2E",
-          "name": "Light Green"
+          "slug": "ivory-cloud",
+          "color": "#F5F4ED",
+          "name": "Ivory Cloud"
         },
         {
-          "slug": "ecru-white",
-          "color": "#EDF4EA",
-          "name": "Ecru White"
+          "slug": "ash-black",
+          "color": "#2A2929",
+          "name": "Ash Black"
         }
       ]
     },

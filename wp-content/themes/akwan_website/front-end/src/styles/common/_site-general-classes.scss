@@ -22,12 +22,121 @@
 
 // region font  Styling
 
-//.paragraph {
-//  @include font(22px, 400, 36px, $akwan_website_white, $carot-sans);
-//  @include large-screen {
-//    @include font-size(32px, 100%);
-//  }
-//}
+h1, .akwan-h1, .akwan-h1 p {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  @include min-medium-screen {
+    font-size: 50px;
+  }
+  @include large-screen {
+    font-size: 78px;
+  }
+}
+
+h2, .akwan-h2, .akwan-h2 p {
+  color: $akwan_website_midnight_navy;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  @include min-medium-screen {
+    font-size: 25px;
+  }
+  @include large-screen {
+    font-size: 36px;
+  }
+}
+
+h3, .akwan-h3, .akwan-h3 p {
+  color: $akwan_website_midnight_navy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  @include min-medium-screen {
+    font-size: 22px;
+  }
+  @include large-screen {
+    font-size: 32px;
+  }
+}
+
+h4, .akwan-h4, .akwan-h4 p {
+  color: $akwan_website_midnight_navy;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+  @include min-medium-screen {
+    font-size: 28px;
+  }
+}
+
+h5, .akwan-h5, .akwan-h5 p {
+  color: $akwan_website_midnight_navy;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 120%;
+  font-style: normal;
+  @include min-medium-screen {
+    font-size: 22px;
+  }
+}
+
+h6, .akwan-h6, .akwan-h6 p {
+  color: $akwan_website_midnight_navy;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 120%;
+  @include min-medium-screen {
+    font-size: 20px;
+  }
+}
+
+
+.paragraph-18, .paragraph-18 p {
+  color: $akwan_website_midnight_navy;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 120%;
+  @include min-medium-screen {
+    font-size: 18px;
+  }
+}
+
+.paragraph-17, .paragraph-17 p {
+  color: $akwan_website_midnight_navy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  @include large-screen {
+    font-size: 17px;
+  }
+}
+
+.paragraph-16, .paragraph-16 p {
+  color: $akwan_website_midnight_navy;
+  font-size: 16px;
+  font-weight: 50;
+  line-height: 120%;
+}
+
+.paragraph-14, .paragraph-14 p {
+  color: $akwan_website_midnight_navy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.paragraph-12, .paragraph-12 p {
+  color: $akwan_website_midnight_navy;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+
+
 
 // endregion
 
@@ -71,33 +180,32 @@ blockquote.theme-blockquote, .wysiwyg-block blockquote {
 .theme-cta-button {
   display: block;
   width: fit-content;
-  @include font(16px, 260, 24px, $akwan_website_white, $carot-sans);
+  @include font(18px, 600, 120%, $akwan_website_white, $carot-sans);
   @include flex(center, center);
-  border-radius: size(8);
-  background-color: $akwan_website_light_green;
-  transition: background-color $duration, color $duration;
+  transition: background-color $duration, color $duration , border $duration;
   cursor: pointer;
-  @include paddingY(size(13), size(11));
-  @include paddingX(size(32));
-  border: 2px solid $akwan_website_light_green;
+  @include paddingY(size(9), size(8));
+  @include paddingX(size(23));
+  border: 3px solid $akwan_website_warm_ivory;
 
   &:hover {
-    background-color: transparent;
+    background-color: $akwan_website_warm_ivory;
   }
 
-  &:disabled {
-    opacity: 0.5;
-  }
+  //&:disabled {
+  //  opacity: 0.5;
+  //}
 
   &.btn-secondary {
-    background: $akwan_website_white;
-    color: $akwan_website_black;
-    border: 2px solid $akwan_website_white;
-    transition: background-color $duration, color $duration;
+    background: $akwan_website_midnight_navy;
+    color: $akwan_website_warm_ivory;
+    border: transparent;
+    transition: background-color $duration, color $duration , border $duration;
 
     &:hover {
       background: transparent;
       color: $akwan_website_white;
+      border: 3px solid red;
     }
   }
 
@@ -429,6 +537,31 @@ ol.theme-unordered-list-element {
     }
   }
 }
+
+.white-color , .white-color p {
+  color: $akwan_website_white;
+}
+
+.fw-400, .fw-400 p {
+  font-weight: 400;
+}
+
+.fw-500, .fw-500 p {
+  font-weight: 500;
+}
+
+.fw-600, .fw-600 p {
+  font-weight: 600;
+}
+
+.fw-700, .fw-700 p {
+  font-weight: 700;
+}
+
+.fw-900, .fw-900 p {
+  font-weight: 900;
+}
+
 
 .footer-icon {
   background: $akwan_website_green;

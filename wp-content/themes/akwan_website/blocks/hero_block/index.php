@@ -37,13 +37,13 @@ $image = get_field('image');
   <div class="cards-wrapper">
     <div class="left-content flex-col gab-20">
       <?php if ($title) { ?>
-      <h2><?= $title ?></h2>
+      <h1 class="akwan-h1 title white-color"><?= $title ?></h1>
       <?php } ?>
       <?php if ($description) { ?>
-      <div class="description"><?= $description ?></div>
+      <div class="description paragraph-14 white-color"><?= $description ?></div>
       <?php } ?>
       <?php if (!empty($cta_button) && is_array($cta_button)) { ?>
-        <a class="cta-button light-cta tab-btn" href="<?= $cta_button['url'] ?>" target="<?= $cta_button['target'] ?>"><?= $cta_button['title'] ?></a>
+        <a class="cta-button theme-cta-button" href="<?= $cta_button['url'] ?>" target="<?= $cta_button['target'] ?>"><?= $cta_button['title'] ?></a>
       <?php } ?>
     </div>
     <div class="right-image">

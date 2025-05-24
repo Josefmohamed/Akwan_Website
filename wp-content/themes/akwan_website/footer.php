@@ -19,7 +19,7 @@ $copy_right_text = get_field('copy_right_text', 'options');
             </a>
           <?php endif; ?>
           <?php if ($footer_info) { ?>
-          <h4 class="footer-info"><?= $footer_info ?></h4>
+          <h4 class="footer-info paragraph-12"><?= $footer_info ?></h4>
           <?php } ?>
         </div>
         <div class="right-content">
@@ -35,7 +35,7 @@ $copy_right_text = get_field('copy_right_text', 'options');
                   ?>
                   <?php if ($link) { ?>
                     <div class="link-wrapper">
-                      <a class="text-sm medium link capital-text" href="<?= $link['url'] ?>" target="<?= $link['target'] ?>">
+                      <a class="paragraph-14 fw-600 link" href="<?= $link['url'] ?>" target="<?= $link['target'] ?>">
                         <?= $link['title'] ?>
                       </a>
                     </div>

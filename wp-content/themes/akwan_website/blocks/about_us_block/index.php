@@ -38,10 +38,10 @@ $image = get_field('image');
 
 <div class="content-wrapper">
   <?php if ($title) { ?>
-    <h2 class="about-us-title"><?= $title ?></h2>
+    <h2 class="about-us-title akwan-h2"><?= $title ?></h2>
   <?php } ?>
   <?php if ($description) { ?>
-    <div class="about-us-title-description"><?= $description ?></div>
+    <div class="about-us-title-description paragraph-14"><?= $description ?></div>
   <?php } ?>
 </div>
 </section>

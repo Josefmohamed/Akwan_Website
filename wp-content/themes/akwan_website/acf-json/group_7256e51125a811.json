@@ -20,9 +20,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_67aa93949c055",
-            "label": "Sub Title",
-            "name": "sub_title",
+            "key": "field_67aa939e9c056",
+            "label": "Title",
+            "name": "title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -40,9 +40,9 @@
             "append": ""
         },
         {
-            "key": "field_67aa939e9c056",
-            "label": "Title",
-            "name": "title",
+            "key": "field_67aa93949c055",
+            "label": "Sub Title",
+            "name": "sub_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -121,5 +121,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1739232183
+    "modified": 1748074101
 }

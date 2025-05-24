@@ -9,6 +9,9 @@
   }
   .content-wrapper {
     padding-left: 60px;
+    @include min-medium-screen {
+      padding-left: 92px;
+    }
     .journey-btn {
       @include marginX(auto);
     }

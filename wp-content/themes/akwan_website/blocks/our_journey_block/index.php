@@ -34,18 +34,18 @@ $cta_button = get_field('cta_button');
 <!-- region akwan_website's Block -->
 <?php general_settings_for_blocks($id, $className, $dataClass); ?>
 <div class="container">
-  <?php if ($sub_title) { ?>
-  <h4 class="journey-sub-title"><?= $sub_title ?></h4>
+  <?php if ($title) { ?>
+    <h4 class="journey-title akwan-h4"><?= $title ?></h4>
   <?php } ?>
   <div class="content-wrapper flex-col gab-40">
-    <?php if ($title) { ?>
-    <h5 class="journey-title"><?= $title ?></h5>
+    <?php if ($sub_title) { ?>
+      <h5 class="journey-sub-title akwan-h3 fw-700"><?= $sub_title ?></h5>
     <?php } ?>
     <?php if ($description) { ?>
-    <div class="journey-description"><?= $description ?></div>
+    <div class="journey-description paragraph-17"><?= $description ?></div>
     <?php } ?>
     <?php if (!empty($cta_button) && is_array($cta_button)) { ?>
-      <a class="cta-button light-cta tab-btn journey-btn" href="<?= $cta_button['url'] ?>" target="<?= $cta_button['target'] ?>"><?= $cta_button['title'] ?></a>
+      <a class="theme-cta-button btn-secondary journey-btn" href="<?= $cta_button['url'] ?>" target="<?= $cta_button['target'] ?>"><?= $cta_button['title'] ?></a>
     <?php } ?>
   </div>
 </div>
